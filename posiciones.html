@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>F&oacute;rmula 1</title>
+</head>
+<body>
+	<header class="header">
+		<div class="top-buttons">
+			<span class="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>	
+				<a href="index.html">
+					<img src="img/logo.png" alt="Logo F1">
+				</a>
+			<nav class="navigation">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="posiciones.html">Posiciones</a></li>
+					<li><a href="calendario.html">Calendario</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	    <table class="tabla1">
+		<caption class="drivers">2022 DRIVERS STANDIGS:   After British Grand Prix 2022</caption>
+	 <tr>
+		 <th>Teams</th>
+		 <th>Driver</th>
+		 <th>Points</th>
+		 <th>Position</th>
+	 </tr>
+	 <tr>
+		 <td>Red Bull Racing</td>
+		 <td>Max Verstappen</td>
+		 <td>181</td>
+		 <td>1</td>
+	 </tr>
+	<tr>
+		<td>Red Bull Racing</td>
+		<td>Sergio P&eacute;rez</td>
+		<td>147</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>Ferrari</td>
+		<td>Charles Leclerc</td>
+		<td>138</td>
+		<td>3</td>
+	</tr>
+	<tr>
+		<td>Ferrari</td>
+		<td>Carlos Sainz</td>
+		<td>127</td>
+		<td>4</td>
+	</tr>	
+	<tr>
+		<td>Mercedes</td>
+		<td>George Russell</td>
+		<td>111</td>
+		<td>5</td>
+	</tr>
+	<tr>
+		<td>Mercedes</td>
+		<td>Lewis Hamilton</td>
+		<td>93</td>
+		<td>6</td>
+	</tr>
+	<tr>
+		<td>Mclaren</td>
+		<td>Lando Norris</td>
+		<td>58</td>
+		<td>7</td>
+	</tr>
+	<tr>
+		<td>Alfa Romeo</td>
+		<td>Valtteri Bottas</td>
+		<td>46</td>
+		<td>8</td>
+	</tr>
+	<tr>
+		<td>Alpine</td>
+		<td>Esteban Ocon</td>
+		<td>39</td>
+		<td>9</td>
+	</tr>
+	<tr>
+		<td>Alpine</td>
+		<td>Fernando Alonso</td>
+		<td>28</td>
+		<td>10</td>
+	</tr>
+	<table class="tabla2">
+		<caption>2022 TEAMS STANDIGS:   After British Grand Prix 2022</caption>
+		<tr>
+			<th>Teams</th>
+			<th>Points Championship</th>
+		</tr>
+		<tr>
+			<td>Red Bull Racing</td>
+			<td>328</td>
+		</tr>
+		<tr>
+			<td>Ferrari</td>
+			<td>265</td>
+		</tr>
+		<tr>
+			<td>Mercedes-AMG</td>
+			<td>204</td>
+		</tr>
+		<tr>
+			<td>Mclaren</td>
+			<td>73</td>
+		</tr>
+		<tr>
+			<td>Alpine</td>
+			<td>67</td>
+		</tr>
+		<tr>
+			<td>Alfa Romeo</td>
+			<td>51</td>
+		</tr>
+		<tr>
+			<td>Alpha Tauri</td>
+			<td>27</td>
+		</tr>
+		<tr>
+			<td>Hass</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td>Aston Martin</td>
+			<td>18</td>
+		</tr>
+		<tr>
+			<td>Williams</td>
+			<td>3</td>
+		</tr>
+			
+	</table>
+
+	<h1 class="titulo-form">¿Que equipo te gustaría que ingresara a la categoría el pr&oacute;ximo a&ntilde;o?</h1>
+	<form id="forminscripcion" class="forminscripcion">
+		<div class="formField">
+			<label for="equipo">Equipo:</label>
+			<input id="equipo" name="equipo">
+		</div>
+        <div class="formField">
+			<label for="posicion">Posici&oacute;n en el Campeonato de Constructores:</label>
+			<input id="posicion" type="number" name="posicion">
+		</div>  
+        <div class="formField">
+			<label for="origen">Origen:</label> 
+			<input id="origen" name="origen">
+		</div>
+        <div class="formField">
+        <button id="btn-enviar">A&ntilde;adir</button>
+		<button id="btn-triplicar">Obtener 3 Datos</button>
+        </div>
+    </form>
+		<div>
+			<input id="filtro" type="text" value="" placeholder="Ingrese equipo a filtrar">
+    		<button id="btn-filtrar">filtrar</button>
+		</div>
+		<p id="respuesta"></p>
+	<section class="tabla-dinamica">
+        <table id="tabla"> 
+			<thead>
+                <tr>
+                    <th>Equipo</th>
+                    <th>Posicion</th>
+                    <th>Origen</th> 
+                    <th>Modificar</th>
+                    <th>Borrar</th>  
+                </tr>
+            </thead>
+				<tbody id="dynamictable">
+				</tbody> 
+			</table> 
+    </section>
+
+	
+
+	<footer>
+		<div class="container-footer">
+			<div class="topbar">
+				<div class="redes-sociales">
+					<a href="https://www.facebook.com/Formula1" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="https://www.instagram.com/f1/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+					<a href="https://twitter.com/f1" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+					<a href="https://www.youtube.com/F1" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+				</div>
+			</div>
+			<div class="sitemap">
+				<div class="logo">
+					<a href="index.html" title="Formula 1" target="_blank">
+						<img src="img/f1-logo2.png">
+					</a>
+				</div>
+				<div class="copyright">
+					<p>&copy; 2003-2022 Formula One World Championship Limited</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://kit.fontawesome.com/9b9b6ff9d7.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/js.js"></script>
+	<script src="js/tabla-dinamica.js"></script>
+</body>
+</html>

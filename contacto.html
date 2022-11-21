@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+	
+    <title>Contacto</title>
+</head>
+<body class="formulario">
+	<header class="header">
+		<div class="top-buttons">
+			<span class="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>	
+				<a href="index.html">
+					<img src="img/logo.png" alt="Logo F1">
+				</a>
+			<nav class="navigation">
+				<ul>
+					<li><a href="Index.html">Inicio</a></li>
+					<li><a href="posiciones.html">Posiciones</a></li>
+					<li><a href="calendario.html">Calendario</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+    <form class="style-form">
+        <h2>CONTACTO</h2>
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="text" name="Correo" placeholder="Correo" required>
+        <input type="text" name="Tel&eacute;fono" placeholder="Tel&eacute;fono" required>
+        <textarea name="mensaje" placeholder="Escriba aqu&iacute; su mensaje"></textarea>
+    </form class="form-contacto">
+	<div class="center">
+		<h1 id="captchaHeading"></h1>
+		<div id="captchaBackground">
+		<canvas id="captcha">Texto captcha</canvas>
+		<input id="textBox" type="text" name="text">
+		<div id="buttons">
+		<input id="submitButton" type="submit">
+		<button id="refreshButton" type="submit">Refresh</button>
+		</div>
+		<span id="output"></span>
+		</div>
+		</div>
+	
+		<footer>
+			<div class="container-footer">
+				<div class="topbar">
+					<div class="redes-sociales">
+						<a href="https://www.facebook.com/Formula1" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+						<a href="https://www.instagram.com/f1/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+						<a href="https://twitter.com/f1" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+						<a href="https://www.youtube.com/F1" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+					</div>
+				</div>
+				<div class="sitemap">
+					<div class="logo">
+						<a href="index.html" title="Formula 1" target="_blank">
+							<img src="img/f1-logo2.png">
+						</a>
+					</div>
+					<div class="copyright">
+						<p>&copy; 2003-2022 Formula One World Championship Limited</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="https://kit.fontawesome.com/9b9b6ff9d7.js" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="js/js.js"></script>
+		<script src="js/captcha.js"></script>
+</body>
+</html>
